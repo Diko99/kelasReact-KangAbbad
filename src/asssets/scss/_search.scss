@@ -1,0 +1,63 @@
+.search {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   &__container{
+      position: relative;
+      text-align     : center;
+      margin         : 10px 0;
+   }
+   &__input-box {
+      border         : 1px solid #ccc;
+      border-radius  : 10px;
+      width          : 500px;
+      padding        : 10px 15px;
+   }
+   &__suggest {
+      &__container{
+         position: absolute;
+         top: 57px;
+         right: 0;
+         left: -70px;
+         ul {
+            border            : 1px solid rgb(216, 216, 216);
+            background-color  : rgb(219, 219, 219);
+            border-radius     : 10px;
+            max-height        : 400px;
+            width             : 510px;
+            overflow-y        : scroll;
+            margin            : auto;
+            position: relative;
+            left: -17px;
+         }
+      }
+      &__btn {
+         border            : 0;
+         width             : 100%;
+         background-color  : rgb(251, 251, 251);
+         font-size         : 12px;
+         padding           : 10px 15px;
+         text-align        : left;
+      }
+      &__btn:hover {
+         background-color  : #2E94B5;
+         color: white;
+      }
+   }
+   &__button {
+      background-color: rgb(46,148,181);
+      margin: 10px;
+      margin-left: 20px;
+      border: 0;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-weight: bold;
+      outline: none;
+   }
+   &__button:active {
+      background-color: darkcyan;
+      outline: none;
+      border: 0;
+   }
+}

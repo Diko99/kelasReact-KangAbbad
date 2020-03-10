@@ -1,0 +1,29 @@
+.surah {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 20px 20px;
+   margin-top: 30px;
+   &__box {
+      border: 2px solid darkcyan;
+      border-radius: 10px;
+      width: 200px;
+      padding: 20px;
+      margin-bottom: 20px;
+   }
+   &__text--center {
+      text-align: center;
+      margin: 0;
+   }
+   &__asma {
+      font-size: 40px;
+      color: darkcyan;
+   }
+   &__name {
+      font-size: 20px;
+      color: darkslateblue;
+      margin-top: 10px;
+   }
+}
